@@ -1,0 +1,85 @@
+/* AUTH (LOGIN / REGISTER) */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(11,28,45,0.85), rgba(11,28,45,0.85)),
+                url('https://images.unsplash.com/photo-1560518883-ce09059eeffa');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+}
+
+.auth-card {
+    background: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    max-width: 420px;
+    padding: 40px 35px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+.auth-card h2 {
+    font-size: 26px;
+    margin-bottom: 8px;
+    color: #0b1c2d;
+}
+
+.auth-card p {
+    font-size: 14px;
+    color: #d4af37;
+    margin-bottom: 25px;
+}
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-card input {
+    padding: 14px 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+}
+
+.auth-card input:focus {
+    border-color: #d4af37;
+}
+
+.auth-card button {
+    margin-top: 10px;
+    padding: 14px;
+    background: #0b1c2d;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.auth-card button:hover {
+    background: #091726;
+}
+
+.auth-links {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.auth-links a {
+    color: #d4af37;
+    font-weight: 500;
+}
+a{
+    color: #d4af37;
+}

@@ -1,0 +1,143 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: url(prime-haven-bg.png.png);
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #0b2c3d;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    color: #d1d9e0;
+    font-size: 24px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    color: #d1d9e0;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: #f4c10f;
+}
+
+/* HEADER */
+.sell-header {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #d1d9e0;
+}
+
+.sell-header h2 {
+    font-size: 32px;
+    color: #0b2c3d;
+    margin-bottom: 10px;
+}
+
+.sell-header p {
+    color: #666;
+}
+
+/* FORM SECTION */
+.sell-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.sell-form {
+    background-color: #d1d9e0;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.sell-form h3 {
+    margin-bottom: 25px;
+    color: #0b2c3d;
+}
+
+/* FORM INPUTS */
+.sell-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sell-form input,
+.sell-form select,
+.sell-form textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.sell-form input:focus,
+.sell-form select:focus,
+.sell-form textarea:focus {
+    border-color: #0b2c3d;
+    outline: none;
+}
+
+/* BUTTON */
+.sell-form button {
+    padding: 14px;
+    background-color: #0b2c3d;
+    color: #d1d9e0;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sell-form button:hover {
+    background-color: #144c6d;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #0b2c3d;
+    color: #d1d9e0;
+    text-align: center;
+    padding: 20px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .sell-form {
+        padding: 30px 20px;
+    }
+}

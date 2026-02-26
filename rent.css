@@ -1,0 +1,207 @@
+/* ================= GLOBAL RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background-color: #0b2c3d;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: #f4c10f;
+}
+
+/* ================= HERO ================= */
+.rent-hero {
+    background: linear-gradient(rgba(11,44,61,0.8), rgba(11,44,61,0.8)),
+                url("https://images.unsplash.com/photo-1507089947368-19c1da9775ae") center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.rent-hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.rent-hero p {
+    font-size: 18px;
+}
+
+/* ================= FILTER ================= */
+.filter-section {
+    background-color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.filter-section form {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.filter-section input,
+.filter-section select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    flex: 1;
+}
+
+.filter-section button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0b2c3d;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.filter-section button:hover {
+    background-color: #144c6d;
+}
+
+/* ================= PROPERTY GRID ================= */
+.rent-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* ================= PROPERTY CARD ================= */
+.property-card {
+    background-color: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.property-card:hover {
+    transform: translateY(-8px);
+}
+
+/* IMAGE */
+.property-image {
+    position: relative;
+}
+
+.property-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* BADGE */
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #25D366;
+    color: #fff;
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+/* INFO */
+.property-info {
+    padding: 20px;
+}
+
+.property-info h3 {
+    font-size: 18px;
+    color: #0b2c3d;
+    margin-bottom: 8px;
+}
+
+.property-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.price {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* BUTTON */
+.btn-contact {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #0b2c3d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn-contact:hover {
+    background-color: #144c6d;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background-color: #0b2c3d;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .rent-hero h2 {
+        font-size: 28px;
+    }
+
+    .rent-container {
+        padding: 0 20px;
+    }
+}

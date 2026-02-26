@@ -1,0 +1,172 @@
+   /* GLOBAL RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #d1d9e0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    background-color: #0b2c3d;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar h1 {
+    color: #d1d9e0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #d1d9e0;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #f4c10f;
+}
+
+/* PAGE HEADER */
+.agent-header {
+    background-color: #d1d9e0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.agent-header h2 {
+    font-size: 32px;
+    color: #0b2c3d;
+    margin-bottom: 10px;
+}
+
+.agent-header p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* AGENT GRID */
+
+.agent-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* AGENT CARD */
+
+.agent-card {
+    background-color: #d1d9e0;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.agent-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* IMAGE CONTAINER */
+.agent-image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background-color: #d1d9e0;
+}
+
+.agent-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* AGENT INFO */
+.agent-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.agent-info h3 {
+    font-size: 20px;
+    color: #0b2c3d;
+    margin-bottom: 5px;
+}
+
+.agent-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* WHATSAPP BUTTON */
+.agent-info a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #25D366;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.agent-info a:hover {
+    background-color: #1ebe5d;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #0b2c3d;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .agent-header h2 {
+        font-size: 26px;
+    }
+
+    .agent-container {
+        padding: 40px 20px;
+    }
+}
