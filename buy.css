@@ -17,7 +17,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 8%;
+    padding: 20px 8%;
     background: #0b1c2d;
     z-index: 999;
     position: fixed;
@@ -25,35 +25,33 @@ body {
 }
 
 .logo {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
     color: #ffffff;
 }
 
 .logo span {
-    color: #38bdf8;
+    color: #d4af37; /* Gold accent */
 }
 
 .nav a {
     color: #ffffff;
-    margin-left: 20px;
-    text-decoration: none;
-    font-size: 14px;
+    margin-left: 25px;
+    font-size: 15px;
+    transition: color 0.3s ease;
 }
 
-.nav a.active,
 .nav a:hover {
-    color: #38bdf8;
+    color: #d4af37;
 }
 
 .nav .btn {
-    background: #38bdf8;
-    padding: 8px 16px;
-    border-radius: 6px;
+    background: #d4af37;
     color: #0b1c2d;
-    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 500;
 }
-
 /* PAGE HERO  */
 .page-hero {
     background: linear-gradient(rgba(11,28,45,0.85), rgba(11,28,45,0.85)),
@@ -195,3 +193,4 @@ body {
         font-size: 32px;
     }
 }
+
