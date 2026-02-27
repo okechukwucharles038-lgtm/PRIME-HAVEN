@@ -57,7 +57,6 @@ a {
     border-radius: 5px;
     font-weight: 500;
 }
-
 /* ABOUT HERO */
 .about-hero {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
@@ -183,4 +182,5 @@ a {
         gap: 15px;
     }
 }
+
 
