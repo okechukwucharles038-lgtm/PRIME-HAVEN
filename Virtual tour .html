@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Tour - Prime Haven</title>
+    <link rel="stylesheet" href="virtual tour.css">
+  
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">Prime Haven</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="buy.html">Buy</a></li>
+                    <li><a href="rent.html">Rent</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tour-hero">
+            <h1>Explore Our Building</h1>
+            <p>Take a 360° virtual tour of our beautiful property</p>
+        </section>
+
+        <section class="tour-container">
+            <div class="tour-wrapper">
+                <!-- Main 360° Viewer -->
+                <div id="panorama" class="panorama-viewer"></div>
+
+                <!-- Room Navigation -->
+                <div class="room-navigation">
+                    <h3>Select a Room:</h3>
+                    <div class="room-buttons">
+                        <button class="room-btn active" data-room="lobby">
+                            <span class="icon">🚪</span>
+                            <span>Lobby</span>
+                        </button>
+                        <button class="room-btn" data-room="living">
+                            <span class="icon">🛋️</span>
+                            <span>Living Room</span>
+                        </button>
+                        <button class="room-btn" data-room="kitchen">
+                            <span class="icon">🍳</span>
+                            <span>Kitchen</span>
+                        </button>
+                        <button class="room-btn" data-room="bedroom">
+                            <span class="icon">🛏️</span>
+                            <span>Bedroom</span>
+                        </button>
+                        <button class="room-btn" data-room="bathroom">
+                            <span class="icon">🚿</span>
+                            <span>Bathroom</span>
+                        </button>
+                        <button class="room-btn" data-room="gym">
+                            <span class="icon">💪</span>
+                            <span>Gym</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Room Information -->
+                <div class="room-info">
+                    <div id="room-details"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructions -->
+        <section class="tour-instructions">
+            <h2>How to Use the Virtual Tour</h2>
+            <div class="instructions-grid">
+                <div class="instruction-card">
+                    <div class="instruction-icon">🖱️</div>
+                    <h3>Drag to Look Around</h3>
+                    <p>Click and drag your mouse to explore the room in all directions</p>
+                </div>
+                <div class="instruction-card">
+                    <div class="instruction-icon">🔍</div>
+                    <h3>Zoom In/Out</h3>
+                    <p>Scroll your mouse wheel to zoom in and out for more details</p>
+                </div>
+                <div class="instruction-card">
+                    <div class="instruction-icon">📱</div>
+                    <h3>Mobile Friendly</h3>
+                    <p>On mobile, use touch and tilt your device to explore</p>
+                </div>
+                <div class="instruction-card">
+                    <div class="instruction-icon">🔄</div>
+                    <h3>Auto-rotate</h3>
+                    <p>The tour will auto-rotate when idle. Click to take control</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Prime Haven. All rights reserved.</p>
+        <p>Contact us: info@primehaven.com | Phone: (123) 456-7890</p>
+    </footer>
+
+    <!-- Pannellum Script -->
+    <script src="https://cdn.pannellum.org/2.5/pannellum.js"></script>
+    <script src="virtual-tour.js"></script>
+</body>
+</html>
